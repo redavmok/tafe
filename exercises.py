@@ -3,41 +3,42 @@
 # If the user enters anything other than a number, detect their mistake using 
 # try and except and print an error message and skip to the next number.
 
-# def new_func():
-#     while True:
-#         try:
-#             line = input('> ')
-#             if line == 'done':
-#                 break
-#             elif line / 1 == False:
-#                 print('Error!')
-#                 continue
-#             print(line)
-#         except:
-#             #print('Error!')
-#             continue
 
-#     print(line)
-# new_func()
-# print('Done!')
+def new_func():
+    while True:
+        try:
+            line = input('> ')
+            if line == 'done':
+                break
+            elif line / 1 == False:
+                print('Error!')
+                continue
+            print(line)
+        except:
+            #print('Error!')
+            continue
 
-# sum = 0
-# total = 0.0
-# while True: 
-#     line = input('Enter a number: ')
-#     if line == 'done':
-#         break
-#     try:
-#         input2 = int(line)
-#     except:
-#         print('Invalid input')
-#         continue
-#         #print(input2)
-#     total = total + input2
-#     sum = sum + 1
+    print(line)
+new_func()
+print('Done!')
+
+sum = 0
+total = 0.0
+while True: 
+    line = input('Enter a number: ')
+    if line == 'done':
+        break
+    try:
+        input2 = int(line)
+    except:
+        print('Invalid input')
+        continue
+        #print(input2)
+    total = total + input2
+    sum = sum + 1
     
-# print('Done!')
-# print(total, sum, total/sum)
+print('Done!')
+print(total, sum, total/sum)
 
 maximum = None
 minimum = None
