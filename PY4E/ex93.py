@@ -14,10 +14,6 @@ for line in handle:
         di[word] = di.get(word, 0) + 1
 # print(di)
 
-##
-
-if 
-
 bigcount = None
 bigword = None
 for word,count in di.items():
