@@ -11,12 +11,6 @@ for line in handle:
         wds = line.split()
         word = wds[2]
         di[word] = di.get(word, 0) + 1
-
-# largest = -1
-# theword = None
-# for k, v in di.items():
-#         if v > largest:
-#             largest = v
-#             theword = k
-
 print(di)
+
+

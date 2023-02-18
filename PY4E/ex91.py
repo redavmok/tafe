@@ -1,3 +1,4 @@
+# davis burke, 17/2/23
 fhand = open('words.txt')
 pie = dict()
 total = 0
