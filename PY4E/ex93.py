@@ -12,7 +12,7 @@ for line in handle:
         wds = line.split()
         word = wds[1]
         di[word] = di.get(word, 0) + 1
-# print(di)
+#print(di)
 
 bigcount = None
 bigword = None
@@ -20,4 +20,4 @@ for word,count in di.items():
     if bigcount is None or count > bigcount:
         bigword = word
         bigcount = count
-print(bigcount, bigword)
+print(bigword, bigcount)
