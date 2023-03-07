@@ -17,7 +17,6 @@ count_total = 0
 
 print(WORD)
 
-
 for guess_num in range(1,7):
     guess = input(f"\n{guess_num}:").upper()
     if len(guess) != 5:
