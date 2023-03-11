@@ -2,6 +2,8 @@ import random
 
 # this records all guessed words
 almanac = list()
+
+#this sets the starting score
 score = 100
 
 ## WORD LIST GENERATOR ##
@@ -20,8 +22,10 @@ else:
     words = [word.replace("'s", '') for word in words]
     word_list = [word.upper() for word in words]
 
+# this chooses the word to be guessed
 WORD = random.choice(word_list)
 
+# this counts each letter in each guess and produces a score
 def score_guess(guess, WORD):
     count_total = 0
     count_misplaced_letters = len(missing_let)
@@ -29,7 +33,7 @@ def score_guess(guess, WORD):
     count_total = (count_misplaced_letters + count_wrong_letters)
     return(count_total)
 
-
+# this is the core loop
 for guess_num in range(1,7):
     guess = input(f"\n{guess_num}:").upper()
     correct_let = {letter for letter, correct in zip(guess, WORD) if letter == correct}
@@ -39,12 +43,14 @@ for guess_num in range(1,7):
         print("Error! Not 5 letters long!")
         continue
     else:
+        # this block looks for whether the guess is correct, or whether it needs to be analysed
         almanac.append(guess)
         if guess == WORD:
             print("Correct!!")
             score -= score_guess(guess, WORD)
             break
         else:
+            # this block creates a graphical representation of each guess
             print("Wrong.")
             for char, letter in zip(WORD, guess):
                 if letter in WORD and letter in char:
