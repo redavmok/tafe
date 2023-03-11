@@ -19,7 +19,7 @@ Pyrdle is open source to ensure complete security and transparancy of under the 
 
 ### Installing
 
-* Download the program file to your desktop
+* Download and save the program file to your desktop
 
 ### Executing program
 
@@ -35,13 +35,13 @@ I probably don't know the answer to the question yet!
 ## Version History
 
 * Version 1
-    * First working program that could be played without modifying the code.
+    * First working version of the program that could be played start to finish.
 
 * Version 2
     * Updated code to be more efficient and utilise functions.
     * Removed need for pathlib dependency.
     * Implemented the ability for any file to be used as the word list (program will still only use 5-letter words however).
-
+    * Added a visual representation of each guess & wrong/misplaced/correct letters
 
 ## License
 
@@ -49,6 +49,4 @@ This project is licensed under the [NAME HERE] License - see the LICENSE.md file
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
 * [wordle official site](https://www.nytimes.com/games/wordle/index.html)
