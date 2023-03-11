@@ -30,10 +30,7 @@ python3 pyrdle.py
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+I probably don't know the answer to the question yet!
 
 ## Version History
 
@@ -54,3 +51,4 @@ This project is licensed under the [NAME HERE] License - see the LICENSE.md file
 
 Inspiration, code snippets, etc.
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
+* [wordle official site](https://www.nytimes.com/games/wordle/index.html)
