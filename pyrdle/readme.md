@@ -19,14 +19,13 @@ Pyrdle is open source to ensure complete security and transparancy of under the 
 
 ### Installing
 
-* Download the program file to your desktop, and use the command 'python3 pyrdle.py' to run the game from a desktop.
+* Download the program file to your desktop
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* Run the below code in the below terminal to intiiate the game
 ```
-code blocks for commands
+python3 pyrdle.py
 ```
 
 ## Help

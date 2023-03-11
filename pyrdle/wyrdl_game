@@ -25,6 +25,9 @@ else:
 # this chooses the word to be guessed
 WORD = random.choice(word_list)
 
+## DEV TOOL TO SEE WORD **
+print(WORD)
+
 # this counts each letter in each guess and produces a score
 def score_guess(guess, WORD):
     count_total = 0
@@ -33,7 +36,7 @@ def score_guess(guess, WORD):
     count_total = (count_misplaced_letters + count_wrong_letters)
     return(count_total)
 
-# this is the core loop
+# this is the core gameplay loop
 for guess_num in range(1,7):
     guess = input(f"\n{guess_num}:").upper()
     correct_let = {letter for letter, correct in zip(guess, WORD) if letter == correct}
