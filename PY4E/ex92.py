@@ -9,7 +9,7 @@ di = dict()
 for line in handle:
 # this if statement finds the email addresses, and skips the line if it's not the start of an email   
     if not line.startswith("From "):
-        continue
+        continue`
     else:
         line = line.rstrip()
         wds = line.split()
